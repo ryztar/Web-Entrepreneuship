@@ -268,6 +268,75 @@ header {
     font-size: 1.5rem;
 }
 
+/* Responsif untuk perangkat dengan lebar layar maksimal 768px (tablet) */
+@media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: column; /* Tampilkan menu vertikal */
+        text-align: center;
+    }
+
+    .navbar .menu a {
+        padding: 10px 0; /* Sesuaikan padding */
+        margin: 5px 0; /* Tambahkan jarak antar link */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Kurangi ukuran font */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Kurangi ukuran font */
+    }
+
+    .gallery-item img {
+        max-width: 100%; /* Biarkan gambar mengikuti lebar layar */
+    }
+
+    .service-container {
+        flex-direction: column; /* Tampilkan layanan secara vertikal */
+    }
+
+    .service {
+        max-width: 100%; /* Biarkan layanan memenuhi lebar layar */
+        margin-bottom: 20px; /* Tambahkan jarak antar layanan */
+    }
+}
+
+/* Responsif untuk perangkat dengan lebar layar maksimal 480px (ponsel) */
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.5rem; /* Kurangi ukuran logo */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem; /* Kurangi ukuran font heading */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem; /* Kurangi ukuran font deskripsi */
+    }
+
+    .cta {
+        padding: 10px 20px; /* Kurangi ukuran tombol */
+        font-size: 0.9rem; /* Kurangi ukuran font tombol */
+    }
+
+    .contact-btn {
+        font-size: 0.9rem; /* Kurangi ukuran font tombol kontak */
+        padding: 10px 15px; /* Sesuaikan padding */
+    }
+
+    .gallery-item img {
+        max-width: 100%; /* Gambar menyesuaikan layar */
+        margin-bottom: 10px; /* Tambahkan jarak antar gambar */
+    }
+
+    .hero {
+        padding: 0 10px; /* Kurangi padding di sisi kiri dan kanan */
+    }
+}
+
+
 /* Footer Styling */
 footer {
     text-align: center;
