@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="logo">EditPro</div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">Tentang</a></li>
@@ -90,5 +94,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>AOS.init();</script>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show'); // Tambah/hapus kelas "show"
+        });
+    </script>
 </body>
 </html>
